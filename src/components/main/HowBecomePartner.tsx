@@ -1,45 +1,40 @@
-import Image from 'next/image';
-import main_black from '../../../public/main_dots_black.svg';
-
 export default function HowBecomePartner() {
   return (
-    <div className="relative pb-[400px] pt-[170px]">
-      <div className="absolute left-[-30%] z-20 opacity-40">
-        <Image src={main_black} alt="" />
-      </div>
-
-      <div className="absolute left-[0px] right-[0px] z-30 mx-auto flex w-full justify-between gap-[20px]">
-        <div className="text-[40px] font-semibold text-[#1A0D4D]">
+    <section className="mx-auto max-w-[1140px] px-[16px] max-sm:px-[16px] sm:px-[30px]">
+      <div className="relative z-30 flex w-full items-start justify-between gap-[60px] pb-[100px] pt-[120px] max-lg:flex-col max-md:gap-[30px] max-md:py-[80px]">
+        <h1 className="max-w-[45%] text-[40px] font-semibold text-[#1A0D4D] max-lg:max-w-full max-sm:text-[28px]">
           Как стать <span className="text-[#5837D0]">партнером</span>
-        </div>
+        </h1>
 
-        <div className="flex w-[530px] flex-col gap-[16px] rounded-[16px] bg-[#EDE7FF] px-[28px] py-[32px] text-[16px] text-[#563cc0]">
-          <div className="flex items-center gap-[20px]">
+        <div className="flex max-w-[45%] flex-1 flex-col gap-[16px] rounded-[16px] bg-[#EDE7FF] px-[28px] py-[32px] text-[16px] text-[#563cc0] max-lg:max-w-full">
+          <div className="flex items-center gap-[20px] max-sm:gap-[26px]">
             <div className="text-[56px] font-semibold text-[#5837D0]">1</div>
-            <div className="text-[19px]">
-              <a href="#" className="text-[#5837D0] underline">
+            <div className="text-[19px] max-sm:text-[16px]">
+              <a href="#CallbackForm" className="text-[#5837D0] underline">
                 Заполните форму на сайте
-              </a>
-              или напишите нам на
+              </a>{' '}
+              или напишите нам на{' '}
               <a href="#" className="text-[#5837D0] underline">
                 affiliate@pravo.tech
               </a>
             </div>
           </div>
+
           <div className="flex items-center gap-[20px]">
             <div className="text-[56px] font-semibold text-[#5837D0]">2</div>
-            <div className="text-[19px]">
+            <p className="text-[19px] max-sm:text-[16px]">
               Пройдите обучение за 2 дня и узнайте обо всех возможностях продуктов
-            </div>
+            </p>
           </div>
+
           <div className="flex items-center gap-[20px]">
             <div className="text-[56px] font-semibold text-[#5837D0]">3</div>
-            <div className="text-[19px]">
+            <p className="text-[19px] max-sm:text-[16px]">
               Продайте лицензию лиду из таргет-листа и получайте вознаграждение от 30 000 рублей
-            </div>
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

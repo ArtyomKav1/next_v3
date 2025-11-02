@@ -1,7 +1,7 @@
 export default function AgencyNetwork() {
   return (
     <section className="h-[570px] w-full bg-[#5837D0]">
-      <div className="mx-auto max-w-[1140px] px-[30px]">
+      <div className="mx-auto max-w-[1140px] px-[30px] max-sm:px-[16px]">
         <div className="py-[88px] max-md:py-[32px]">
           <div className="flex max-w-[640px] flex-col gap-[44px] max-md:gap-[20px]">
             <div className="flex flex-col gap-[24px]">
@@ -22,8 +22,8 @@ export default function AgencyNetwork() {
           </div>
         </div>
 
-        <div className="flex items-center gap-[20px] max-md:flex-col max-md:gap-[10px] relative z-30">
-          <div className="flex flex-1 items-center gap-[20px] max-md:gap-[10px] w-full">
+        <div className="relative z-30 flex items-center gap-[20px] max-md:flex-col max-md:gap-[10px]">
+          <div className="flex w-full flex-1 items-center gap-[20px] max-md:gap-[10px]">
             <div className="flex h-[140px] flex-1 flex-col items-center gap-[0px] rounded-[16px] bg-[#EDE7FF] px-[12px] py-[44px] transition-all duration-300 hover:-translate-y-0.5">
               <div className="text-[32px] font-bold text-[#5837D0] max-lg:text-[24px] max-md:text-[18px]">
                 от 30 000 ₽

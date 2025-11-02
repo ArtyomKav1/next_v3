@@ -2,57 +2,68 @@
 
 import { redirect } from 'next/navigation';
 import Image from 'next/image';
-import logo from '../../..//public/logo_violet.svg';
-import info from '../../../public/Info.svg';
+import logo from '@/public/logo_violet.svg';
+import { useState } from 'react';
 
 export default function HeaderCaseBook() {
+  const [isPopapModal, setPopapModal] = useState<boolean>();
   return (
-    <div className="h-[805px] bg-[#daebff]">
-      <div className="mx-auto flex h-full max-w-[1224px] flex-col gap-[140px]">
+    <div className="w-full bg-[#daebff]">
+      <div className="mx-auto flex max-w-[1140px] flex-col px-[30px]">
         <div className="flex h-[96px] w-full items-center justify-between">
           <div className="flex gap-[64px]">
-            <div onClick={() => redirect('/')} className="cursor-pointer">
-              <Image src={logo} alt="" />
+            <div onClick={() => redirect('/')} className="shrink-0 cursor-pointer">
+              <Image src={logo} alt="logo" />
             </div>
-            <div className="flex gap-[28px]">
+            <div className="flex gap-[28px] font-medium text-[#1A0D4D] max-md:hidden">
               <div
                 onClick={() => redirect('/casebook')}
-                className="cursor-pointer text-[15px] font-semibold text-[#2988FF]"
+                className="cursor-pointer text-[#2988FF] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
               >
                 Casebook
               </div>
               <div
                 onClick={() => redirect('/caselook')}
-                className="cursor-pointer text-[15px] font-semibold text-[#2E2E2E]"
+                className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
               >
                 Caselook
               </div>
             </div>
           </div>
-          <div>
-            <button className="h-[48px] rounded-[16px] bg-[#2988FF] px-[20px] pb-[1px] font-bold text-[#FFFFFF]">
+          <a href="#CallbackForm" className="max-md:hidden">
+            <button className="h-[48px] rounded-[16px] bg-[#2988FF] px-[20px] pb-[1px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80">
               Стать партнером
             </button>
-          </div>
-        </div>
+          </a>
 
-        <div className="flex justify-between">
-          <div className="flex w-[604px] flex-col gap-[56px]">
-            <div className="flex flex-col gap-[24px]">
-              <div className="text-[40px] font-bold leading-[120%] tracking-tight text-[#2E2E2E]">
-                Cервис для проверки контрагентов и мониторинга судебных дел
-              </div>
-              <div className="text-[20px] text-[#2E2E2E]">
-                Помогает специалистам контролировать бизнес-партнеров и вести судебную работу в
-                одной системе.
-              </div>
+          <button
+            className="relative mr-[20px] h-[40px] w-[40px] rounded-[10px] bg-white/30 md:hidden [&>*]:absolute [&>*]:block [&>*]:h-[3px] [&>*]:w-[20px] [&>*]:rounded-[6px] [&>*]:bg-[#2E2E2E] [&>*]:transition-all"
+            onClick={() => setPopapModal(!isPopapModal)}
+          >
+            <span
+              className={`duration-400 right-[10px] top-[12px] ease-in-out ${isPopapModal && 'top-[20px] rotate-[45deg]'}`}
+            ></span>
+            <span className={`right-[10px] ease-in-out ${isPopapModal && 'opacity-0'}`}></span>
+            <span
+              className={`duration-400 ', bottom-[10px] right-[10px] ease-in-out ${isPopapModal && 'top-[20px] rotate-[-45deg]'}`}
+            ></span>
+          </button>
+
+          <div
+            className={`absolute left-[5%] top-[80px] z-20 w-[90%] rounded-2xl bg-white transition-all duration-300 md:hidden ${isPopapModal ? 'opacity-100' : 'opacity-0'}`}
+          >
+            <div
+              onClick={() => redirect('/casebook')}
+              className="cursor-pointer px-[20px] py-[10px] text-black transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
+            >
+              Casebook
             </div>
-            <button className="w-[291px] rounded-[16px] bg-[#2988FF] px-[32px] py-[20px]">
-              Стать партнером
-            </button>
-          </div>
-          <div className="h-[347px] w-[576px]">
-            <Image src={info} alt="" />
+            <div
+              onClick={() => redirect('/caselook')}
+              className="cursor-pointer px-[20px] py-[10px] text-black transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
+            >
+              Caselook
+            </div>
           </div>
         </div>
       </div>

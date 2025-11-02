@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import './globals.css';
 import { Open_Sans } from 'next/font/google';
+import Footer from '@/components/Footer';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={` ${openSans.variable} antialiased`}>
         <div className="font-sans">{children}</div>
+        <Footer />
       </body>
     </html>
   );

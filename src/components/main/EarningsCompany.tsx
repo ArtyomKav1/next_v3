@@ -1,20 +1,20 @@
 export default function EarningsCompany() {
   return (
-    <section className="mx-auto max-w-[1140px] px-[30px]">
+    <section className="mx-auto max-w-[1140px] px-[30px] max-sm:px-[16px]">
       <div className="flex flex-col gap-[56px] pt-[170px]">
         <div className="text-[40px] text-[#1A0D4D]">
           Зарабатывать с <span className="text-[#5837D0]"> PravoTech — легко</span>
         </div>
         <div className="flex flex-col gap-[20px]">
           <div className="flex gap-[20px] max-xl:flex-col">
-            <div className="flex h-[248px] flex-col justify-between rounded-[16px] bg-[#5837D0] px-[28px] py-[28px]">
+            <div className="flex h-[248px] flex-col justify-between rounded-[16px] bg-[#5837D0] px-[28px] py-[28px] max-lg:h-full">
               <div className="text-[28px] font-semibold text-[#FFFFFF]">Неограниченный доход</div>
               <div className="text-[15px] text-[#FFFFFF]">
                 Вы можете продать любое количество лицензий — у нас нет лимитов на продажи
                 продуктов.
               </div>
             </div>
-            <div className="flex h-[248px] flex-col justify-between rounded-[16px] bg-[#E8E1FF] px-[28px] py-[28px]">
+            <div className="flex h-[248px] flex-col justify-between rounded-[16px] bg-[#E8E1FF] px-[28px] py-[28px] max-lg:h-full">
               <div className="text-[28px] font-semibold text-[#1A0D4D]">
                 Готовый анализ целевой аудитории
               </div>
@@ -48,9 +48,12 @@ export default function EarningsCompany() {
                   Закрывайте сделки из любой точки мира — нужны только компьютер и интернет.
                 </div>
               </div>
-              <button className="h-[58px] rounded-[16px] bg-[#EEFF2D] px-[32px] py-[20px] text-[15px] font-bold text-[#1A0D4D]">
-                Стать партнером
-              </button>
+              <a
+                href="#CallbackForm"
+                className="flex h-[58px] items-center justify-center rounded-[16px] bg-[#EEFF2D] px-[32px] py-[20px] text-[15px] font-bold text-[#1A0D4D]"
+              >
+                <button>Стать партнером</button>
+              </a>
             </div>
           </div>
         </div>
