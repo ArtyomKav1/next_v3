@@ -5,7 +5,7 @@ import gaz from '@/public/bank/gaz.svg';
 import ros from '@/public/bank/ros.svg';
 import hh from '@/public/bank/hh.svg';
 import sam from '@/public/bank/sam.svg';
-import gruz from '@/public/bank/gruz.svg';
+
 import T from '@/public/bank/T.svg';
 
 
@@ -19,7 +19,6 @@ export  const partnerCompanies: { src: StaticImageData; alt: string }[] = [
   { src: ros, alt: 'Rosneft' },
   { src: hh, alt: 'HeadHunter' },
   { src: sam, alt: 'Samokat' },
-  { src: gruz, alt: 'Gruz' },
   { src: T, alt: 'T' },
 ];
 

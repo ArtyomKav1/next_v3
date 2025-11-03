@@ -1,3 +1,5 @@
+import { PlugLink } from "../PlugLink";
+
 export default function HowBecomePartner() {
   return (
     <section className="mx-auto max-w-[1140px] px-[16px] max-sm:px-[16px] sm:px-[30px]">
@@ -14,9 +16,9 @@ export default function HowBecomePartner() {
                 Заполните форму на сайте
               </a>{' '}
               или напишите нам на{' '}
-              <a href="#" className="text-[#5837D0] underline">
+              <PlugLink  className="text-[#5837D0] underline">
                 affiliate@pravo.tech
-              </a>
+              </PlugLink>
             </div>
           </div>
 

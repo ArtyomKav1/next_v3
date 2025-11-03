@@ -21,7 +21,7 @@ export default function PleasureWork() {
         <div className="relative">
           <div className="swiper-button-prev rounded-full transition-colors duration-300 hover:bg-white max-lg:hidden"></div>
           <div className="swiper-button-next right-[-100px] rounded-full transition-colors duration-300 hover:bg-white hover:text-[#000000] max-lg:hidden"></div>
-
+          <div className="pagination"></div>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar]}
             spaceBetween={50}
@@ -30,6 +30,11 @@ export default function PleasureWork() {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
+            pagination={{
+              el: '.pagination',
+              clickable: true,
+            }}
+
           >
             {slides.map((item, index) => (
               <SwiperSlide key={index}>

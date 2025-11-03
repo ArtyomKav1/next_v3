@@ -28,7 +28,12 @@ export const CallbackFormCheckBox = (props: ItemCheckBoxProps) => {
         <p>
           {props.label}{' '}
           {props.linkText && props.linkHref && (
-            <a href={props.linkHref} className="text-[#EEFF2D] underline">
+            <a
+              href={props.linkHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#EEFF2D] underline"
+            >
               {props.linkText}
             </a>
           )}

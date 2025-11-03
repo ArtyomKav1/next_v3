@@ -7,14 +7,14 @@ export default function EarningsCompany() {
         </div>
         <div className="flex flex-col gap-[20px]">
           <div className="flex gap-[20px] max-xl:flex-col">
-            <div className="flex h-[248px] flex-col justify-between rounded-[16px] bg-[#5837D0] px-[28px] py-[28px] max-lg:h-full">
+            <div className="flex h-[248px] flex-col justify-between rounded-[16px] bg-[#5837D0] px-[28px] py-[28px] max-xl:h-full">
               <div className="text-[28px] font-semibold text-[#FFFFFF]">Неограниченный доход</div>
               <div className="text-[15px] text-[#FFFFFF]">
                 Вы можете продать любое количество лицензий — у нас нет лимитов на продажи
                 продуктов.
               </div>
             </div>
-            <div className="flex h-[248px] flex-col justify-between rounded-[16px] bg-[#E8E1FF] px-[28px] py-[28px] max-lg:h-full">
+            <div className="flex h-[248px] flex-col justify-between rounded-[16px] bg-[#E8E1FF] px-[28px] py-[28px] max-xl:h-full">
               <div className="text-[28px] font-semibold text-[#1A0D4D]">
                 Готовый анализ целевой аудитории
               </div>

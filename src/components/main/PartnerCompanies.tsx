@@ -17,7 +17,7 @@ export default function PartnerCompanies() {
 
         <div className="relative">
           <button
-            className="absolute left-0 top-1/2 z-10 -translate-y-1/2 p-2 hover:opacity-70"
+            className="absolute left-[-5%] top-1/2 z-10 -translate-y-1/2 p-2 hover:opacity-70 max-xl:hidden"
             onClick={() => scrollContainerRef.current?.scrollBy({ left: -400, behavior: 'smooth' })}
           >
             <Image src={leftArrow} alt="leftArrow" />
@@ -25,7 +25,7 @@ export default function PartnerCompanies() {
 
           <div
             ref={scrollContainerRef}
-            className="blue mx-auto flex h-[72px] w-full max-w-[100%] items-center gap-[64px] overflow-x-auto px-[48px] max-md:gap-[24px] max-md:px-[32px]"
+            className="hide-scrollbar mx-auto flex h-[72px] w-full max-w-[100%] items-center gap-[64px] overflow-x-auto px-[48px] max-md:gap-[24px] max-md:px-[32px]"
           >
             {partnerCompanies.map((company, index) => (
               <Image
@@ -38,7 +38,7 @@ export default function PartnerCompanies() {
           </div>
 
           <button
-            className="absolute right-0 top-1/2 z-10 -translate-y-1/2 p-2 hover:opacity-70"
+            className="absolute right-[-5%] top-1/2 z-10 -translate-y-1/2 p-2 hover:opacity-70 max-xl:hidden"
             onClick={() => scrollContainerRef.current?.scrollBy({ left: 400, behavior: 'smooth' })}
           >
             <Image src={rightArrow} alt="rightArrow" />

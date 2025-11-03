@@ -16,9 +16,9 @@ html {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset; 
-  -webkit-text-fill-color: white; 
-  transition: background-color 5000s ease-in-out 0s; 
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +54,15 @@ body {
   background-color: #333d77;
 }
 
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .swiper-button-prev {
   --swiper-navigation-sides-offset: -40px;
 }
@@ -76,8 +85,6 @@ body {
   color: gray;
 }
 
-
-
 .swiper-pagination-bullet {
   --swiper-pagination-bullet-width: 20px;
   --swiper-pagination-bullet-height: 3px;
@@ -89,4 +96,12 @@ body {
 }
 .swiper-button-disabled {
   opacity: 0 !important;
+}
+
+.pagination {
+  position: absolute;
+  --swiper-pagination-top: 110%;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: fit-content !important;
 }

@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     icon: '/favicon/android-chrome-512x512.png',
     apple: '/favicon/apple-touch-icon.png',
   },
+  robots: {
+    index: false, 
+    follow: false, 
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${openSans.variable} antialiased`}>
+      <body className={`bg-[#cdbfed] ${openSans.variable} antialiased`}>
         <div className="font-sans">{children}</div>
         <Footer />
       </body>

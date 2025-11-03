@@ -90,14 +90,14 @@ export function CallbackForm() {
                           name="agree1"
                           label="Я согласен c"
                           linkText="условиями обработки персональных данных"
-                          linkHref="#"
+                          linkHref="https://ya.ru/?npr=1"
                         />
 
                         <CallbackFormCheckBox
                           name="agree2"
                           label="Я ознакомлен c"
                           linkText="офертой"
-                          linkHref="#"
+                          linkHref="https://ya.ru/?npr=1"
                         />
 
                         <button

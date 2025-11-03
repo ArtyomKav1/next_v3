@@ -37,20 +37,22 @@ export default function Header() {
           </a>
 
           <button
-            className="relative mr-[20px] h-[40px] w-[40px] rounded-[10px] bg-white/30 md:hidden [&>*]:absolute [&>*]:block [&>*]:h-[3px] [&>*]:w-[20px] [&>*]:rounded-[6px] [&>*]:bg-[#1A0D4D] [&>*]:transition-all"
+            className="relative z-40 mr-[20px] h-[40px] w-[40px] rounded-[10px] bg-white md:hidden [&>*]:absolute [&>*]:block [&>*]:h-[3px] [&>*]:w-[20px] [&>*]:rounded-[6px] [&>*]:bg-[#1A0D4D] [&>*]:transition-all"
             onClick={() => setPopapModal(!isPopapModal)}
           >
             <span
-              className={`duration-400 right-[10px] top-[12px] ease-in-out ${isPopapModal && 'top-[20px] rotate-[45deg]'}`}
+              className={`duration-400 right-[10px] ease-in-out ${isPopapModal ? 'top-[19px] rotate-[45deg]' : 'top-[12px]'}`}
             ></span>
-            <span className={`right-[10px] ease-in-out ${isPopapModal && 'opacity-0'}`}></span>
             <span
-              className={`duration-400 ', bottom-[10px] right-[10px] ease-in-out ${isPopapModal && 'top-[20px] rotate-[-45deg]'}`}
+              className={`right-[10px] top-[19px] ease-in-out ${isPopapModal && 'opacity-0'}`}
+            ></span>
+            <span
+              className={`duration-400 ', right-[10px] ease-in-out ${isPopapModal ? 'top-[19px] rotate-[-45deg]' : 'top-[26px]'}`}
             ></span>
           </button>
 
           <div
-            className={`absolute left-[5%] top-[80px] w-[90%] z-20 rounded-2xl bg-white transition-all duration-300 md:hidden ${isPopapModal ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute left-[5%] top-[80px] z-20 w-[90%] rounded-2xl bg-white transition-all duration-300 md:hidden ${isPopapModal ? 'opacity-100' : 'opacity-0'}`}
           >
             <div
               onClick={() => redirect('/casebook')}
@@ -66,7 +68,6 @@ export default function Header() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

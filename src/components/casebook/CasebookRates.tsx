@@ -29,7 +29,7 @@ export default function CasebookRates() {
                 </p>
                 <p className="text-[27px] font-bold text-[#2988FF] max-sm:text-[18px]">30 000 ₽</p>
               </div>
-              <a href="/#CallbackForm" className="w-[291px] flex-1">
+              <a href="/#CallbackForm" className="w-[291px] flex-1 max-lg:w-full">
                 <button className="rounded-[16px] bg-[#2988FF] px-[32px] py-[20px] text-[15px] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80 max-lg:w-full">
                   Стать партнером
                 </button>
@@ -54,7 +54,7 @@ export default function CasebookRates() {
                 </p>
                 <p className="text-[27px] font-bold text-[#2988FF] max-sm:text-[18px]">42 000 ₽</p>
               </div>
-              <a href="/#CallbackForm" className="w-[291px] flex-1">
+              <a href="/#CallbackForm" className="w-[291px] flex-1 max-lg:w-full">
                 <button className="rounded-[16px] bg-[#005BCC] px-[32px] py-[20px] text-[15px] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80 max-lg:w-full">
                   Стать партнером
                 </button>

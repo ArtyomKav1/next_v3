@@ -3,7 +3,7 @@ export default function AgencyNetwork() {
     <section className="h-[570px] w-full bg-[#5837D0]">
       <div className="mx-auto max-w-[1140px] px-[30px] max-sm:px-[16px]">
         <div className="py-[88px] max-md:py-[32px]">
-          <div className="flex max-w-[640px] flex-col gap-[44px] max-md:gap-[20px]">
+          <div className="flex max-w-[640px] flex-col gap-[44px] max-md:items-center max-md:gap-[20px]">
             <div className="flex flex-col gap-[24px]">
               <div className="text-[50px] font-bold leading-[120%] max-md:text-[30px]">
                 Агентская сеть от крупной IT-компании
@@ -12,13 +12,12 @@ export default function AgencyNetwork() {
                 Рекомендуйте юридические продукты и зарабатывайте от 180 000 рублей ежемесячно.
               </div>
             </div>
-            <div>
-              <a href="#CallbackForm">
-                <button className="h-[58px] w-[291px] rounded-[16px] bg-[#EEFF2D] px-[32px] py-[18px] font-bold text-[#1A0D4D] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80">
-                  Стать партнером
-                </button>
-              </a>
-            </div>
+
+            <a href="#CallbackForm" className="w-[291px] flex-1 max-md:w-full">
+              <button className="w-full rounded-[16px] bg-[#EEFF2D] px-[32px] py-[18px] font-bold text-[#1A0D4D] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80">
+                Стать партнером
+              </button>
+            </a>
           </div>
         </div>
 

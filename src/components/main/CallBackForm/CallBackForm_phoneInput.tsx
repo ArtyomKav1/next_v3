@@ -28,12 +28,12 @@ export const CallBackFormPhoneInput = (props: PhoneInputProps) => {
         overwrite
         lazy={false}
       />
-      <div className="pointer-events-none absolute top-4 -z-10 -translate-x-[15%] -translate-y-4 scale-75 transform text-[#FFFFFF]/40 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-4 peer-focus:scale-75">
+      <div className="pointer-events-none absolute left-[19px] top-4 -z-10 origin-left -translate-y-4 scale-75 transform text-[#FFFFFF]/40 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-4 peer-focus:scale-75">
         {props.placeholder}
       </div>
 
       {meta.touched && !meta.error && (
-        <div className="group ">
+        <div className="group">
           <Image
             src={okImg}
             alt="check"

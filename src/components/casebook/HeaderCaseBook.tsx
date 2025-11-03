@@ -16,36 +16,38 @@ export default function HeaderCaseBook() {
               <Image src={logo} alt="logo" />
             </div>
             <div className="flex gap-[28px] font-medium text-[#1A0D4D] max-md:hidden">
-              <div
+              <button
                 onClick={() => redirect('/casebook')}
                 className="cursor-pointer text-[#2988FF] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
               >
                 Casebook
-              </div>
-              <div
+              </button>
+              <button
                 onClick={() => redirect('/caselook')}
                 className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
               >
                 Caselook
-              </div>
+              </button>
             </div>
           </div>
-          <a href="#CallbackForm" className="max-md:hidden">
+          <a href="/#CallbackForm" className="max-md:hidden">
             <button className="h-[48px] rounded-[16px] bg-[#2988FF] px-[20px] pb-[1px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80">
               Стать партнером
             </button>
           </a>
 
           <button
-            className="relative mr-[20px] h-[40px] w-[40px] rounded-[10px] bg-white/30 md:hidden [&>*]:absolute [&>*]:block [&>*]:h-[3px] [&>*]:w-[20px] [&>*]:rounded-[6px] [&>*]:bg-[#2E2E2E] [&>*]:transition-all"
+            className="relative z-40 mr-[20px] h-[40px] w-[40px] rounded-[10px] bg-white md:hidden [&>*]:absolute [&>*]:block [&>*]:h-[3px] [&>*]:w-[20px] [&>*]:rounded-[6px] [&>*]:bg-[#1A0D4D] [&>*]:transition-all"
             onClick={() => setPopapModal(!isPopapModal)}
           >
             <span
-              className={`duration-400 right-[10px] top-[12px] ease-in-out ${isPopapModal && 'top-[20px] rotate-[45deg]'}`}
+              className={`duration-400 right-[10px] ease-in-out ${isPopapModal ? 'top-[19px] rotate-[45deg]' : 'top-[12px]'}`}
             ></span>
-            <span className={`right-[10px] ease-in-out ${isPopapModal && 'opacity-0'}`}></span>
             <span
-              className={`duration-400 ', bottom-[10px] right-[10px] ease-in-out ${isPopapModal && 'top-[20px] rotate-[-45deg]'}`}
+              className={`right-[10px] top-[19px] ease-in-out ${isPopapModal && 'opacity-0'}`}
+            ></span>
+            <span
+              className={`duration-400 ', right-[10px] ease-in-out ${isPopapModal ? 'top-[19px] rotate-[-45deg]' : 'top-[26px]'}`}
             ></span>
           </button>
 
