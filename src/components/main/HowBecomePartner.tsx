@@ -1,10 +1,10 @@
-import { PlugLink } from "../PlugLink";
+import { PlugLink } from '../PlugLink';
 
 export default function HowBecomePartner() {
   return (
-    <section className="mx-auto max-w-[1140px] px-[16px] max-sm:px-[16px] sm:px-[30px]">
-      <div className="relative z-30 flex w-full items-start justify-between gap-[60px] pb-[100px] pt-[120px] max-lg:flex-col max-md:gap-[30px] max-md:py-[80px]">
-        <h1 className="max-w-[45%] text-[40px] font-semibold text-[#1A0D4D] max-lg:max-w-full max-sm:text-[28px]">
+    <section className="mx-auto max-w-[1140px] px-[16px] max-md:px-[20px] sm:px-[30px]">
+      <div className="relative z-30 flex w-full items-start justify-between gap-[60px] pb-[100px] pt-[120px] max-lg:flex-col max-md:gap-[30px] max-md:py-[60px]">
+        <h1 className="max-w-[45%] text-[40px] font-semibold text-[#1A0D4D] max-lg:max-w-full max-lg:text-center max-lg:text-[30px] max-sm:text-[25px]">
           Как стать <span className="text-[#5837D0]">партнером</span>
         </h1>
 
@@ -16,20 +16,18 @@ export default function HowBecomePartner() {
                 Заполните форму на сайте
               </a>{' '}
               или напишите нам на{' '}
-              <PlugLink  className="text-[#5837D0] underline">
-                affiliate@pravo.tech
-              </PlugLink>
+              <PlugLink className="text-[#5837D0] underline">affiliate@pravo.tech</PlugLink>
             </div>
           </div>
 
-          <div className="flex items-center gap-[20px]">
+          <div className="flex items-center gap-[20px] max-sm:gap-[26px]">
             <div className="text-[56px] font-semibold text-[#5837D0]">2</div>
             <p className="text-[19px] max-sm:text-[16px]">
               Пройдите обучение за 2 дня и узнайте обо всех возможностях продуктов
             </p>
           </div>
 
-          <div className="flex items-center gap-[20px]">
+          <div className="flex items-center gap-[20px] max-sm:gap-[26px]">
             <div className="text-[56px] font-semibold text-[#5837D0]">3</div>
             <p className="text-[19px] max-sm:text-[16px]">
               Продайте лицензию лиду из таргет-листа и получайте вознаграждение от 30 000 рублей

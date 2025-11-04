@@ -12,7 +12,7 @@ import { slides } from './casebook.constant';
 
 export default function PleasureWork() {
   return (
-    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[16px]">
+    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[20px] max-sm:pt-[30px]">
       <div className="flex flex-col gap-[56px] max-lg:gap-[30px] max-sm:gap-[15px]">
         <h1 className="text-[40px] font-semibold text-[#2E2E2E] max-lg:text-center max-lg:text-[30px] max-sm:text-[25px]">
           Как сервис помогает <span className="text-[#2988FF]">(</span>специалистам
@@ -34,7 +34,6 @@ export default function PleasureWork() {
               el: '.pagination',
               clickable: true,
             }}
-
           >
             {slides.map((item, index) => (
               <SwiperSlide key={index}>

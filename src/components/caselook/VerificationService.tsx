@@ -3,7 +3,7 @@ import info_CaseLook from '@/public/info_CaseLook.svg';
 
 export default function VerificationService() {
   return (
-    <section className="bg-[#fff5e2] py-[60px] max-lg:py-[30px] max-sm:px-[16px]">
+    <section className="bg-[#fff5e2] py-[60px] max-lg:py-[30px] max-md:px-[20px] max-sm:py-[30px]">
       <div className="mx-auto flex max-w-[1140px] items-center justify-between px-[30px] max-lg:flex-col">
         <div className="flex w-[604px] flex-col gap-[56px] max-lg:w-full max-lg:items-center max-lg:text-center max-sm:gap-[26px]">
           <div className="flex flex-col gap-[24px]">

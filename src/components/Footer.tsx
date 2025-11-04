@@ -11,7 +11,7 @@ function FooterCaseBook() {
     <>
       <footer className="h-full bg-[#1A0D4D]">
         <div className="mx-auto h-full max-w-[1128px] py-[56px]">
-          <div className="flex w-full flex-col gap-[40px] px-[48px] text-[#FFFFFF]/70">
+          <div className="flex w-full flex-col gap-[40px] px-[30px] max-md:px-[20px]  text-[#FFFFFF]/70">
             <div className="flex h-full max-w-[1032px] flex-col justify-between max-md:gap-[30px] md:flex-row">
               <div className="flex flex-col gap-[32px]">
                 <Image src={logo_yellow} width={120} height={24} alt="" />

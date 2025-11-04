@@ -10,7 +10,7 @@ import { slides } from './caselook.constants';
 
 export default function ServiceHelps() {
   return (
-    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[16px]">
+    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-md:px-[20px] max-sm:pt-[30px]">
       <div className="flex flex-col gap-[56px] max-lg:gap-[30px] max-sm:gap-[15px]">
         <h1 className="text-[40px] font-semibold text-[#2E2E2E] max-lg:text-center max-lg:text-[30px] max-sm:text-[25px]">
           Как сервис помогает <span className="text-[#F7A600]">(</span>специалистам
@@ -44,13 +44,7 @@ export default function ServiceHelps() {
                       <p className="text-[15px] text-[#2E2E2E] max-lg:text-[12px]">{item.text}</p>
                     </div>
                     <div className="relative aspect-[16/10] w-full max-w-[500px] max-md:max-w-full">
-                      <Image
-                        src={item.image}
-                        alt={item.alt}
-                        fill
-                        className="object-contain"
-                        priority={index === 0}
-                      />
+                      <Image src={item.image} alt={item.alt} fill className="object-contain" />
                     </div>
                   </div>
                 </div>

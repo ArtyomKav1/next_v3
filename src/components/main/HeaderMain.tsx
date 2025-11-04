@@ -9,7 +9,7 @@ export default function Header() {
   const [isPopapModal, setPopapModal] = useState<boolean>();
   return (
     <div className="w-full bg-[#5837D0]">
-      <div className="mx-auto flex max-w-[1140px] flex-col px-[30px]">
+      <div className="mx-auto flex max-w-[1140px] flex-col px-[30px] max-md:px-[20px]">
         <div className="flex h-[96px] w-full items-center justify-between">
           <div className="flex gap-[64px]">
             <div onClick={() => redirect('/')} className="shrink-0 cursor-pointer">
@@ -18,13 +18,13 @@ export default function Header() {
             <div className="flex gap-[28px] max-md:hidden">
               <div
                 onClick={() => redirect('/casebook')}
-                className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
+                className="cursor-pointer text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
               >
                 Casebook
               </div>
               <div
                 onClick={() => redirect('/caselook')}
-                className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
+                className="cursor-pointer text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80"
               >
                 Caselook
               </div>
@@ -52,7 +52,7 @@ export default function Header() {
           </button>
 
           <div
-            className={`absolute left-[5%] top-[80px] z-20 w-[90%] rounded-2xl bg-white transition-all duration-300 md:hidden ${isPopapModal ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute left-[5%] top-[80px] z-50 w-[90%] rounded-2xl bg-white transition-all duration-300 md:hidden ${isPopapModal ? 'opacity-100' : 'opacity-0'}`}
           >
             <div
               onClick={() => redirect('/casebook')}

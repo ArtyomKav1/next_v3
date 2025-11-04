@@ -1,6 +1,6 @@
 export default function EasyRecommendation() {
   return (
-    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[16px]">
+    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[20px] max-sm:py-[30px]">
       <div className="flex flex-col gap-[56px] max-sm:gap-[30px]">
         <h1 className="text-[40px] font-semibold tracking-tight text-[#2E2E2E] max-lg:text-center max-lg:text-[30px] max-sm:text-[25px]">
           Почему рекомендовать Casebook — <span className="text-[#2988FF]">легко</span>

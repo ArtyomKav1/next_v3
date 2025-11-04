@@ -2,7 +2,7 @@ import { cards } from './casebook.constant';
 
 export default function CasebookHelps() {
   return (
-    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[16px]">
+    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[20px] max-sm:py-[30px]">
       <div className="grid grid-cols-2 gap-[40px] max-lg:grid-cols-1 max-lg:gap-[20px]">
         <div className="max-lg:order-1">
           <div className="sticky top-[40px] flex flex-col gap-[26px] max-lg:items-center max-lg:gap-[30px]">

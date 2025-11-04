@@ -9,7 +9,7 @@ export default function HeaderCaseBook() {
   const [isPopapModal, setPopapModal] = useState<boolean>();
   return (
     <div className="w-full bg-[#daebff]">
-      <div className="mx-auto flex max-w-[1140px] flex-col px-[30px]">
+      <div className="mx-auto flex max-w-[1140px] flex-col px-[30px] max-sm:px-[20px]">
         <div className="flex h-[96px] w-full items-center justify-between">
           <div className="flex gap-[64px]">
             <div onClick={() => redirect('/')} className="shrink-0 cursor-pointer">

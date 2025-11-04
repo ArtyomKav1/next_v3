@@ -1,10 +1,10 @@
 export default function AgencyNetwork() {
   return (
-    <section className="h-[570px] w-full bg-[#5837D0]">
-      <div className="mx-auto max-w-[1140px] px-[30px] max-sm:px-[16px]">
+    <section className="h-[570px] w-full bg-[#5837D0] text-white">
+      <div className="mx-auto max-w-[1140px] px-[30px] max-md:px-[20px]">
         <div className="py-[88px] max-md:py-[32px]">
           <div className="flex max-w-[640px] flex-col gap-[44px] max-md:items-center max-md:gap-[20px]">
-            <div className="flex flex-col gap-[24px]">
+            <div className="relative z-30 flex flex-col gap-[24px] max-lg:text-center">
               <div className="text-[50px] font-bold leading-[120%] max-md:text-[30px]">
                 Агентская сеть от крупной IT-компании
               </div>

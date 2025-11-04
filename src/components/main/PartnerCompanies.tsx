@@ -9,9 +9,9 @@ export default function PartnerCompanies() {
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <section className="mx-auto max-w-[1140px] px-[16px] max-sm:px-[16px] sm:px-[30px]">
-      <div className="flex flex-col gap-[56px] pt-[170px] max-md:pt-[70px]">
-        <h1 className="text-center text-[40px] font-semibold text-[#1A0D4D] max-md:text-[28px]">
+    <section className="mx-auto max-w-[1140px] px-[16px] max-md:px-[20px] sm:px-[30px]">
+      <div className="flex flex-col gap-[56px] pt-[170px] max-lg:gap-[30px] max-md:pt-[70px] max-sm:gap-[15px]">
+        <h1 className="text-center text-[40px] font-semibold text-[#1A0D4D] max-lg:text-center max-lg:text-[30px] max-md:text-[28px] max-sm:text-[25px]">
           Наши решения уже оценили <span className="text-[#5837D0]">крупнейшие компании</span>
         </h1>
 

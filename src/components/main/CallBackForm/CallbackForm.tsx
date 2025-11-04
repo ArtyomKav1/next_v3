@@ -39,7 +39,7 @@ export function CallbackForm() {
   };
 
   return (
-    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[16px]">
+    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-md:px-[20px]">
       <div id="CallbackForm">
         <div className="h-full w-full">
           <div className="flex h-full w-full flex-col gap-[24px] rounded-[32px] bg-[#5837d0] p-[20px] md:p-[40px] lg:flex-row">

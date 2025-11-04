@@ -1,6 +1,6 @@
 export default function RecommendProduct() {
   return (
-    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[16px]">
+    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[20px] max-sm:py-[30px]">
       <div className="mx-auto flex max-w-[1140px] flex-col gap-[56px] max-lg:gap-[30px] max-sm:gap-[15px]">
         <h1 className="text-[40px] font-semibold tracking-tight text-[#2E2E2E] max-lg:text-center max-lg:text-[30px] max-sm:text-[25px]">
           Рекомендуйте продукт, опираясь на <span className="text-[#2988FF]">цифры</span>

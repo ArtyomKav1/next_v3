@@ -5,12 +5,12 @@ import { redirect } from 'next/navigation';
 
 export default function ProductSelection() {
   return (
-    <section className="mx-auto max-w-[1140px] px-[16px] max-sm:px-[16px] sm:px-[30px]">
-      <div className="flex flex-col gap-[56px] pt-[170px] max-lg:pt-[80px]">
+    <section className="mx-auto max-w-[1140px] px-[16px] max-md:px-[20px] sm:px-[30px]">
+      <div className="flex flex-col gap-[56px] pt-[170px] max-lg:pt-[80px] max-sm:pt-[50px]">
         <div className="flex gap-[20px] max-lg:flex-col">
-          <div className="flex-1 text-[40px] font-semibold leading-[120%] text-[#1A0D4D]">
+          <h1 className="flex-1 text-[40px] font-semibold leading-[120%] text-[#1A0D4D] max-lg:text-center max-lg:text-[30px] max-sm:text-[25px]">
             Выбирайте, какой <span className="text-[#5837D0]">продукт</span> продавать
-          </div>
+          </h1>
           <div className="flex-1 text-[18px] leading-[140%] text-[#1A0D4D]">
             Наши сервисы повышают эффективность разных специалистов — от юристов до работников служб
             безопасности.
@@ -29,7 +29,7 @@ export default function ProductSelection() {
             </div>
             <button
               onClick={() => redirect('/casebook')}
-              className="w-[200px] rounded-[16px] bg-[#5B9AEC] px-[32px] py-[20px] text-[#FFFFFF]"
+              className="w-[200px] rounded-[16px] bg-[#5B9AEC] px-[32px] py-[20px] text-[#FFFFFF] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80 max-lg:w-full"
             >
               Узнать больше
             </button>
@@ -46,7 +46,7 @@ export default function ProductSelection() {
 
             <button
               onClick={() => redirect('/caselook')}
-              className="w-[200px] rounded-[16px] bg-[#FFBE23] px-[32px] py-[20px] text-[#1A0D4D]"
+              className="w-[200px] rounded-[16px] bg-[#FFBE23] px-[32px] py-[20px] text-[#1A0D4D] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80 max-lg:w-full"
             >
               Узнать больше
             </button>

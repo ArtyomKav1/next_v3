@@ -1,6 +1,6 @@
 export default function CasebookRates() {
   return (
-    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[16px]">
+    <section className="mx-auto max-w-[1140px] px-[30px] py-[60px] max-sm:px-[20px] max-sm:py-[30px]">
       <div className="flex flex-col gap-[56px] max-sm:gap-[30px]">
         <div className="flex flex-col gap-[16px]">
           <h1 className="text-[40px] font-semibold text-[#2E2E2E] max-lg:text-center max-lg:text-[30px] max-sm:text-[25px]">
@@ -22,15 +22,15 @@ export default function CasebookRates() {
                 Для мониторинга судебных дел и проверки контрагентов — юридических и физических лиц
               </p>
             </div>
-            <div className="flex max-xl:flex-col max-sm:gap-[10px] xl:gap-[20px]">
+            <div className="flex gap-[10px] max-xl:flex-col max-sm:gap-[10px] xl:gap-[20px]">
               <div className="flex gap-[6px] max-xl:items-center xl:flex-col">
-                <p className="text-[15px] text-[#2E2E2E] max-sm:text-[13px]">
+                <p className="text-[15px] text-[#2E2E2E] max-sm:text-[14px]">
                   Вознаграждение за одну продажу:
                 </p>
-                <p className="text-[27px] font-bold text-[#2988FF] max-sm:text-[18px]">30 000 ₽</p>
+                <p className="text-[27px] font-bold text-[#2988FF] max-sm:text-[15px]">30 000 ₽</p>
               </div>
               <a href="/#CallbackForm" className="w-[291px] flex-1 max-lg:w-full">
-                <button className="rounded-[16px] bg-[#2988FF] px-[32px] py-[20px] text-[15px] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80 max-lg:w-full">
+                <button className="rounded-[16px] bg-[#2988FF] px-[32px] py-[20px] text-[15px] text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80 max-lg:w-full">
                   Стать партнером
                 </button>
               </a>
@@ -47,15 +47,15 @@ export default function CasebookRates() {
                 все возможности тарифа Standard
               </p>
             </div>
-            <div className="flex max-xl:flex-col max-sm:gap-[10px] xl:gap-[20px]">
+            <div className="flex gap-[10px] max-xl:flex-col max-sm:gap-[10px] xl:gap-[20px]">
               <div className="flex gap-[6px] max-xl:items-center xl:flex-col">
-                <p className="text-[15px] text-[#2E2E2E] max-sm:text-[13px]">
+                <p className="text-[15px] text-[#2E2E2E] max-sm:text-[14px]">
                   Вознаграждение за одну продажу:
                 </p>
-                <p className="text-[27px] font-bold text-[#2988FF] max-sm:text-[18px]">42 000 ₽</p>
+                <p className="text-[27px] font-bold text-[#2988FF] max-sm:text-[15px]">42 000 ₽</p>
               </div>
               <a href="/#CallbackForm" className="w-[291px] flex-1 max-lg:w-full">
-                <button className="rounded-[16px] bg-[#005BCC] px-[32px] py-[20px] text-[15px] transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80 max-lg:w-full">
+                <button className="rounded-[16px] bg-[#005BCC] px-[32px] py-[20px] text-[15px] text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-80 max-lg:w-full">
                   Стать партнером
                 </button>
               </a>
