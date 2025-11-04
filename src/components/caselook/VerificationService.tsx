@@ -7,10 +7,10 @@ export default function VerificationService() {
       <div className="mx-auto flex max-w-[1140px] items-center justify-between px-[30px] max-lg:flex-col">
         <div className="flex w-[604px] flex-col gap-[56px] max-lg:w-full max-lg:items-center max-lg:text-center max-sm:gap-[26px]">
           <div className="flex flex-col gap-[24px]">
-            <h1 className="text-[40px] font-bold leading-[120%] tracking-tight text-[#2E2E2E] max-sm:text-[30px]">
+            <h1 className="text-[40px] font-bold leading-[120%] tracking-tight text-[#2E2E2E] max-sm:text-[26px]">
               Сервис для поиска и анализа судебной практики
             </h1>
-            <h2 className="text-[20px] text-[#2E2E2E]">
+            <h2 className="max-sm:text-[18px] text-[20px] text-[#2E2E2E]">
               Помогает юристам создать эффективную стратегию, повышая шансы на победу в судебном
               споре.
             </h2>
