@@ -3,7 +3,7 @@ import MainCaseBook from '@/components/casebook/MainCaseBook';
 
 export default function Home() {
   return (
-    <div className="h-full w-full overflow-x-hidden ">
+    <div className="h-full w-full ">
       <HeaderCaseBook />
 
       <MainCaseBook />

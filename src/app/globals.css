@@ -10,6 +10,9 @@
 html {
   scroll-behavior: smooth;
 }
+/* * {
+  outline: 1px solid red !important;
+} */
 :root {
   --background: #ffffff;
   --foreground: #171717;
